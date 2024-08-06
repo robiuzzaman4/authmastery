@@ -6,7 +6,7 @@ const SettingsPage = async () => {
   const session = await auth();
   return (
     <div>
-      <h1 className="text-3xl">{JSON.stringify(session)}</h1>
+      <h1 className="text-xl text-wrap">{JSON.stringify(session)}</h1>
       {/* <h1 className="text-3xl">Settings page</h1> */}
       <form
         action={async () => {

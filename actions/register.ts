@@ -20,7 +20,7 @@ export const register = async (data: z.infer<typeof RegisterSchema>) => {
 
   // check existing user
   const existingUser = await getUserByEmail(email);
-  
+
   if (existingUser) {
     return { error: "Email already in use" };
   }
