@@ -21,6 +21,7 @@ export const login = async (data: z.infer<typeof LoginSchema>) => {
       password,
       redirectTo: DEFAULT_REDIRECT_URL,
     });
+    return { success: "User login successfull" };
   } catch (error) {
     if (error instanceof AuthError) {
       switch (error.type) {

@@ -43,6 +43,7 @@ const LoginForm = () => {
         setError(data?.error);
       });
     });
+    
   };
   return (
     <div className="w-full">
